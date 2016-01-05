@@ -9,7 +9,7 @@
         <link type="text/css" rel="stylesheet" href="css/swipebox.css" />
         <link type="text/css" rel="stylesheet" href="css/animations.css" />
         <link type="text/css" rel="stylesheet" href="css/css.css" />
-        <link type="text/css" rel="stylesheet" href="js2/jquery.mobile-1.4.5.css" />
+        <link type="text/css" rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css" />
         <style type="text/css"></style>
 
     </head>
@@ -18,7 +18,7 @@
 
         <div class="panel-overlay"></div>
         <!-- Login -->
-        <div data-role="page" id="inicio">
+       <!-- <div data-role="page" id="inicio">
             <div data-role="header">
                 <h1>Autenticacion de Usuario</h1>
             </div>
@@ -31,7 +31,7 @@
                     <input type="submit" value="Login" id="botonLogin">
                 </form>		
             </div>
-        </div>
+        </div>-->
 
         <!-- Menu cliente -->
         <div data-role="page" id="menupri">
@@ -40,7 +40,7 @@
                     <!--<div class="navbar_left"><a href="#"><img src="images/icons/blue/menu.png" alt="" title=""></a></div>-->
                     <div class="navbar_left"></div>
                     <div class="navbar_center"><h2><a href="index_.html">Opciones</a></h2></div>
-                    <div class="navbar_right"><a href="#inicio" data-panel="right"><img src="images/icons/blue/logout.png" alt="" title=""></a></div>
+                    <div class="navbar_right"><a href="" data-panel="right"><img src="images/icons/blue/logout.png" alt="" title=""></a></div>
                 </div>
             </div>        
             <div data-role="content" id="pages_maincontent">
@@ -113,14 +113,17 @@
         <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
         <script type="text/javascript" src="js/jquery-ui.min.js"></script>
         <script>
-//            $(document).bind('mobileinit', function () {
-//                $.mobile.pushStateEnabled = false;
-//            });
+            $(document).bind('mobileinit', function () {
+                $.mobile.pushStateEnabled = false;
+            });
         </script>
-        <script type="text/javascript" src="js2/jquery.mobile-1.4.5.js"></script>
-        <script src="js/jquery.validate.min.js" type="text/javascript"></script>
-        <script type="text/javascript" src="js/my-app.js"></script> 
-        <script type="text/javascript" src="js/login.js"></script> 
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="js/my_app.js"></script> 
+        <script type="text/javascript" src="js/my_login.js"></script> 
+        <script type="text/javascript" src="js/my_clientes.js"></script> 
+        <script type="text/javascript" src="js/my_productos.js"></script> 
+        <script type="text/javascript" src="js/my_pedidos.js"></script> 
         <div class="popup-overlay"></div>
 		</body>
 		</html>
